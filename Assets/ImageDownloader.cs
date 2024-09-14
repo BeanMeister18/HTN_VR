@@ -6,11 +6,14 @@ using UnityEngine.Networking;
 public class ImageDownloader : MonoBehaviour
 {
     Material _currMat;
+    public Material SetMat;
     public string url;
     public float thres;
     public void Start()
     {
-        _currMat = GetComponent<Renderer>().material;
+        if (!SetMat)
+            _currMat = GetComponent<Renderer>().material;
+        _currMat = SetMat;
         StartCoroutine(DownloadImage(url));
     }
 
