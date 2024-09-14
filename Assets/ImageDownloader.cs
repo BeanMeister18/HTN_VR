@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+public enum ClothesType
+{
+    None,
+    Torso,
+    Lower,
+    Foot
+}
 public class ImageDownloader : MonoBehaviour
 {
     Material _currMat;
+    public ClothesType Clothing = ClothesType.None;
     public Material SetMat;
     public string url;
     public float thres;
@@ -13,7 +21,9 @@ public class ImageDownloader : MonoBehaviour
     {
         if (!SetMat)
             _currMat = GetComponent<Renderer>().material;
-        _currMat = SetMat;
+        else
+            _currMat = SetMat;
+
         StartCoroutine(DownloadImage(url));
     }
 
