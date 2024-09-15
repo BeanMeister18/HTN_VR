@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -17,6 +18,9 @@ public class ImageDownloader : MonoBehaviour
     public Material SetMat;
     public string url;
     public string Price;
+    public string title;
+    public TextMeshPro TMPTitle;
+    public TextMeshPro TMPPrice;
     public float thres;
     public void Start()
     {
@@ -26,6 +30,12 @@ public class ImageDownloader : MonoBehaviour
             _currMat = SetMat;
 
         StartCoroutine(DownloadImage(url));
+
+        if (TMPTitle)
+            TMPTitle.text = title;
+
+        if (TMPPrice)
+        TMPPrice.text = Price;
     }
 
     IEnumerator DownloadImage(string MediaUrl)

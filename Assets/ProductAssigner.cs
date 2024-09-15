@@ -36,6 +36,7 @@ public class ProductAssigner : MonoBehaviour
                     ProductList[ind].Clothing = p.title;
                     ProductList[ind].url = p.imageUrl;
                     ProductList[ind].Price = p.price;
+                    ProductList[ind].title = p.title.ToString();
                     ProductList[ind].Start();
                     ind++;
                 }
