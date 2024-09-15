@@ -13,7 +13,7 @@ public class ProductScraper : MonoBehaviour
     private static readonly string accessToken = "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";
 
     // Create an array to hold the extracted data
-    int productCount;
+    public int productCount;
     object[] productsArray;
 
     // Start is called before the first frame update
@@ -51,6 +51,21 @@ public class ProductScraper : MonoBehaviour
                     string imageUrl = (string)product["images"][0]["src"];
 
                     productsArray[index] = new { productId, title, price, imageUrl };
+
+                    Product pd = new Product();
+                    pd.productId = productId; pd.price = price; pd.imageUrl = imageUrl;
+
+                    if (title.ToLower().Contains("shirt"))
+                    {
+                        pd.title = ClothesType.Torso;
+                    }
+
+                    if (title.ToLower().Contains("shorts") || title.ToLower().Contains("pants"))
+                    {
+                        pd.title = ClothesType.Lower;
+                    }
+
+                    GameSettings.Products.Add(pd);
                     index++;
                 }
 

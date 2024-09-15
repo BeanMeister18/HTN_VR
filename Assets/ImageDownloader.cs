@@ -16,6 +16,7 @@ public class ImageDownloader : MonoBehaviour
     public ClothesType Clothing = ClothesType.None;
     public Material SetMat;
     public string url;
+    public string Price;
     public float thres;
     public void Start()
     {
