@@ -29,7 +29,8 @@ public class ImageDownloader : MonoBehaviour
         else
             _currMat = SetMat;
 
-        StartCoroutine(DownloadImage(url));
+        if (url.Length > 0)
+            StartCoroutine(DownloadImage(url));
 
         if (TMPTitle)
             TMPTitle.text = title;
