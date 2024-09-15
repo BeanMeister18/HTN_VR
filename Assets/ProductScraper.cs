@@ -9,8 +9,8 @@ using System.Linq;
 
 public class ProductScraper : MonoBehaviour
 {
-    private static readonly string shopifyUrl = "https://quickstart-18bf5f9b.myshopify.com";
-    private static readonly string accessToken = "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";
+    private static readonly string shopifyUrl = " ";//"https://quickstart-18bf5f9b.myshopify.com";
+    private static readonly string accessToken = " ";//"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";
 
     // Create an array to hold the extracted data
     int productCount;
