@@ -46,19 +46,6 @@ public class ImageDownloader : MonoBehaviour
             Debug.Log(request.error);
         else {
             Texture2D t = (((DownloadHandlerTexture)request.downloadHandler).texture);
-
-            var colourD = t.GetPixels32();
-
-            for (int i = 0; i < colourD.Length; i++)
-            {
-                if (colourD[i].r + colourD[i].g + colourD[i].b >= thres)
-                {
-                    colourD[i].a = 0;
-                }
-            }
-
-            t.SetPixels32(colourD);
-            t.Apply();
             _currMat.mainTexture = t;
         }
     }

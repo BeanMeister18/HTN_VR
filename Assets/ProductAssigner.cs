@@ -10,6 +10,11 @@ public class ProductAssigner : MonoBehaviour
     ProductScraper _P;
     public ImageDownloader[] ProductList;
 
+    float _t = 0;
+    float _lt = 5;
+
+    float its = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +23,13 @@ public class ProductAssigner : MonoBehaviour
         Distribute();
     }
 
-    private void OnEnable()
+    private void Update()
     {
-        Distribute();
+        if (_t < _lt)
+        {
+            Distribute();
+            _t += Time.deltaTime;
+        }
     }
 
     // Update is called once per frame

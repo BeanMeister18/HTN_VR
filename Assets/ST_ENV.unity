@@ -3933,8 +3933,8 @@ Transform:
   m_GameObject: {fileID: 1084507131}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022, y: 1.698, z: 0.316}
-  m_LocalScale: {x: 0.51386005, y: 0.51386, z: 1.0938}
+  m_LocalPosition: {x: -0.022, y: 1.698, z: 0.0183}
+  m_LocalScale: {x: 0.51386005, y: 0.51386, z: 0.49844465}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1799601346}
@@ -5442,6 +5442,9 @@ MonoBehaviour:
   SetMat: {fileID: 8700556502027386330, guid: beca1a4f5f15e441491b7e479ace836b, type: 3}
   url: https://quickstart-18bf5f9b.myshopify.com/cdn/shop/files/longsleeve.png?v=1726331126&width=360
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 710
 --- !u!1 &1779179255
 GameObject:
@@ -5462,7 +5465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1779179256
 Transform:
   m_ObjectHideFlags: 0
@@ -5472,7 +5475,7 @@ Transform:
   m_GameObject: {fileID: 1779179255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021999955, y: -0.85, z: -0.17799988}
+  m_LocalPosition: {x: -0.022, y: 1.1, z: 0.019}
   m_LocalScale: {x: 0.51386005, y: 0.51386, z: 0.51386005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5962,6 +5965,9 @@ MonoBehaviour:
   SetMat: {fileID: -2959106697064317672, guid: beca1a4f5f15e441491b7e479ace836b, type: 3}
   url: https://cdn.shopify.com/s/files/1/0600/0322/1603/files/longsleeve.png?v=1726331126
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 710
 --- !u!1 &1855354243
 GameObject:
@@ -6240,7 +6246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1949694442
 Transform:
   m_ObjectHideFlags: 0
@@ -6250,7 +6256,7 @@ Transform:
   m_GameObject: {fileID: 1949694441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021999955, y: -1.3210001, z: -0.17799988}
+  m_LocalPosition: {x: -0.022, y: 0.604, z: 0.007}
   m_LocalScale: {x: 0.51386005, y: 0.40188992, z: 0.51386005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12515,6 +12521,9 @@ MonoBehaviour:
   SetMat: {fileID: 0}
   url: 
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 745
 --- !u!65 &6425582807647175694
 BoxCollider:
@@ -12775,6 +12784,9 @@ MonoBehaviour:
   SetMat: {fileID: 0}
   url: 
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 745
 --- !u!65 &6699927323110147169
 BoxCollider:
@@ -13200,6 +13212,9 @@ MonoBehaviour:
   SetMat: {fileID: 0}
   url: 
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 745
 --- !u!65 &7132297493171423678
 BoxCollider:
@@ -14555,6 +14570,9 @@ MonoBehaviour:
   SetMat: {fileID: 0}
   url: 
   Price: 
+  title: 
+  TMPTitle: {fileID: 0}
+  TMPPrice: {fileID: 0}
   thres: 745
 --- !u!1 &8610101728484961758
 GameObject:

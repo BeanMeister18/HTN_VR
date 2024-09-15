@@ -6,6 +6,7 @@ public class ClothesSwapper : MonoBehaviour
 {
     public ClothesType ClothesSection;
     public ImageDownloader dsection;
+    public AudioSource trigger;
     private void OnTriggerStay(Collider other)
     {
         ImageDownloader imd = other.GetComponent<ImageDownloader>();
@@ -14,10 +15,15 @@ public class ClothesSwapper : MonoBehaviour
         {
             if (imd.Clothing == ClothesSection)
             {
-                dsection.url = imd.url;
-                dsection.Start();
+                if (dsection.url != imd.url)
+                {
+                    dsection.url = imd.url;
+                    dsection.Start();
 
-                Destroy(imd.gameObject);
+                    trigger.Play();
+                }
+
+              //  Destroy(imd.gameObject);
             }
         }
     }
