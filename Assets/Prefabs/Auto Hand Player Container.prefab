@@ -1061,6 +1061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2907805954389533038}
   - {fileID: 7054030338131752019}
   m_Father: {fileID: 1180249862463883545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1655,7 +1656,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8113797557299324200}
-  - {fileID: 2907805954389533038}
   - {fileID: 5745246606051946775}
   - {fileID: 7140712115907282131}
   - {fileID: 2565186318081012549}
@@ -4084,15 +4084,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4322234894111259355}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.134, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1017835682222873535}
   - {fileID: 2979969186651561432}
   - {fileID: 1274203893118335296}
-  m_Father: {fileID: 1180249862463883545}
+  m_Father: {fileID: 5745246606051946775}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2159337481036851960
 MonoBehaviour:
@@ -8538,7 +8538,7 @@ Transform:
   m_GameObject: {fileID: 9030570268673290517}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022, y: 0, z: -0.178}
+  m_LocalPosition: {x: -0.022000045, y: 0, z: -0.17800036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11829,6 +11829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f78f6c3e3a94ade85a3490bb24c8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Clothing: 0
   SetMat: {fileID: -2959106697064317672, guid: beca1a4f5f15e441491b7e479ace836b, type: 3}
   url: https://quickstart-18bf5f9b.myshopify.com/cdn/shop/files/longsleeve.png?v=1726331126&width=360
   thres: 710
